@@ -8,26 +8,37 @@
 ```
 git clone ...
 ```
-2. Ejecutar
 
+2. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
+
+3. LLenar las variabels de entorno definidas en  __.env__
+
+4. Instalar los paquetes
 ```
 yarn install
 ```
 
-3. Tener Nest CLI instalado
+5. Tener Nest CLI instalado
 ```
 npm i -g @nest/cli
 ```
 
-4. Levantar la base de datos
+6. Levantar la base de datos
 ```
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla
+7. Iniciar la aplicación en modo desarrollo
+```
+yarn start:dev
+```
+
+8. Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
+
+
 ## Stack usado
 * MongoDB
 * Nest
